@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: drop-all
+      author: Yuri
+      runAlways: true
+      changes:
+        - dropAll
+
+  - include:
+      file: db/changelog/schema-ddl.yaml
+  - include:
+      file: db/changelog/users-dml.yaml
+  - include:
+      file: db/changelog/units-dml.yaml
+  - include:
+      file: db/changelog/bookings-dml.yaml

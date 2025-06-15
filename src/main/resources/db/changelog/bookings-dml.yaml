@@ -1,0 +1,94 @@
+databaseChangeLog:
+  - changeSet:
+      id: mock_booking
+      author: Yuri
+      changes:
+        - insert:
+            tableName: bookings
+            columns:
+              - column: { name: user_id, valueNumeric: 1 }
+              - column: { name: unit_id, valueNumeric: 1 }
+              - column: { name: start_date, valueDate: "2025-06-17" }
+              - column: { name: end_date, valueDate: "2025-06-21" }
+              - column: { name: status, value: "CONFIRMED" }
+
+        - insert:
+            tableName: bookings
+            columns:
+              - column: { name: user_id, valueNumeric: 2 }
+              - column: { name: unit_id, valueNumeric: 2 }
+              - column: { name: start_date, valueDate: "2025-06-22" }
+              - column: { name: end_date, valueDate: "2025-06-26" }
+              - column: { name: status, value: "PENDING" }
+
+        - insert:
+            tableName: bookings
+            columns:
+              - column: { name: user_id, valueNumeric: 1 }
+              - column: { name: unit_id, valueNumeric: 3 }
+              - column: { name: start_date, valueDate: "2025-06-27" }
+              - column: { name: end_date, valueDate: "2025-06-30" }
+              - column: { name: status, value: "CANCELLED" }
+
+        - insert:
+            tableName: bookings
+            columns:
+              - column: { name: user_id, valueNumeric: 2 }
+              - column: { name: unit_id, valueNumeric: 4 }
+              - column: { name: start_date, valueDate: "2025-07-01" }
+              - column: { name: end_date, valueDate: "2025-07-05" }
+              - column: { name: status, value: "CONFIRMED" }
+
+        - insert:
+            tableName: bookings
+            columns:
+              - column: { name: user_id, valueNumeric: 1 }
+              - column: { name: unit_id, valueNumeric: 5 }
+              - column: { name: start_date, valueDate: "2025-07-06" }
+              - column: { name: end_date, valueDate: "2025-07-10" }
+              - column: { name: status, value: "CONFIRMED" }
+
+        - insert:
+            tableName: bookings
+            columns:
+              - column: { name: user_id, valueNumeric: 2 }
+              - column: { name: unit_id, valueNumeric: 6 }
+              - column: { name: start_date, valueDate: "2025-07-11" }
+              - column: { name: end_date, valueDate: "2025-07-15" }
+              - column: { name: status, value: "PENDING" }
+
+        - insert:
+            tableName: bookings
+            columns:
+              - column: { name: user_id, valueNumeric: 1 }
+              - column: { name: unit_id, valueNumeric: 7 }
+              - column: { name: start_date, valueDate: "2025-07-16" }
+              - column: { name: end_date, valueDate: "2025-07-20" }
+              - column: { name: status, value: "CONFIRMED" }
+
+        - insert:
+            tableName: bookings
+            columns:
+              - column: { name: user_id, valueNumeric: 2 }
+              - column: { name: unit_id, valueNumeric: 8 }
+              - column: { name: start_date, valueDate: "2025-07-21" }
+              - column: { name: end_date, valueDate: "2025-07-25" }
+              - column: { name: status, value: "CONFIRMED" }
+
+        - insert:
+            tableName: bookings
+            columns:
+              - column: { name: user_id, valueNumeric: 1 }
+              - column: { name: unit_id, valueNumeric: 9 }
+              - column: { name: start_date, valueDate: "2025-07-26" }
+              - column: { name: end_date, valueDate: "2025-07-30" }
+              - column: { name: status, value: "CANCELLED" }
+
+        - insert:
+            tableName: bookings
+            columns:
+              - column: { name: user_id, valueNumeric: 2 }
+              - column: { name: unit_id, valueNumeric: 10 }
+              - column: { name: start_date, valueDate: "2025-07-31" }
+              - column: { name: end_date, valueDate: "2025-08-04" }
+              - column: { name: status, value: "CONFIRMED" }
