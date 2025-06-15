@@ -69,12 +69,13 @@ server:
 
 ## API Endpoints
 
-- `POST /units` — Add new unit
-- `GET /units/search` — Search for available units
-- `GET /units/count` — Get number of available units
-- `POST /bookings` — Book a unit
-- `GET /payments` — Get all payments
-- `POST /payments/process/{id}` — Manually process a payment (for testing)
+- `GET /api/users` — Get all users
+- `POST /api/units` — Add new unit
+- `POST /api/units/availability` — Get available units counts for booking
+- `GET /api/units/search` — Search for available units
+- `GET /api/bookings` — Get all bookings
+- `POST /api/bookings` — Book a unit
+- `GET /api/payments` — Get all payments
 
 ## Features
 
@@ -91,7 +92,6 @@ server:
 - Uses virtual threads for payment emulation.
 - 15-minute interval check for expired payments via `@Scheduled`.
 - Booking/payment expiration modeled via `PaymentExpiration` entity.
-- Markup price calculation is customizable via `application.yml` (optional).
 
 ## License
 

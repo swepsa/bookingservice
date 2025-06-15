@@ -59,7 +59,7 @@ class UnitControllerIntegrationTest {
 
         UnitDto savedUnit = objectMapper.readValue(response, UnitDto.class);
 
-        mockMvc.perform(get("/api/units")
+        mockMvc.perform(get("/api/units/search")
                        .param("numberOfRooms", "100")
                        .param("page", "0")
                        .param("size", "10")

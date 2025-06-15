@@ -79,7 +79,7 @@ class UnitControllerTest {
         BDDMockito.given(unitService.searchUnits(any(UnitSearchCriteria.class), anyInt(), anyInt(), anyString(), anyString()))
                   .willReturn(page);
 
-        mockMvc.perform(get("/api/units")
+        mockMvc.perform(get("/api/units/search")
                        .param("numberOfRooms", "2")
                        .param("page", "0")
                        .param("size", "10")

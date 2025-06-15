@@ -74,7 +74,7 @@ public class UnitController {
                     @ApiResponse(responseCode = "200", description = "Units retrieved successfully")
             }
     )
-    @GetMapping
+    @GetMapping("/search")
     public ResponseEntity<Page<UnitDto>> searchUnits(
             @RequestParam(required = false) Integer numberOfRooms,
             @RequestParam(required = false) String type,
